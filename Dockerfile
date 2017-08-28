@@ -43,5 +43,6 @@ RUN mkdir -p /hdfs \
              /hadoop \
              /cms \
              /etc/cvmfs/SITECONF \
+             /nfs-7 \
              /lfs_roots
 
