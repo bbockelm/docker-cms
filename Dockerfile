@@ -33,7 +33,7 @@ RUN yum -y install cvmfs \
                    compat-libstdc++-33 libidn libX11 libXmu libSM libICE \
                    libXcursor libXext libXrandr libXft mesa-libGLU mesa-libGL \
                    e2fsprogs-libs libgfortran libXi libXinerama libXft libXrender libXpm \
-                   libcom_err && \
+                   libcom_err libaio && \
     yum clean all
 
 # Various directories needed for bind mounts (as overlayfs is not available on RHEL6)
