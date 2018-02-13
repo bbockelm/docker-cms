@@ -34,7 +34,7 @@ RUN yum -y install cvmfs \
                    libXcursor libXext libXrandr libXft mesa-libGLU mesa-libGL \
                    e2fsprogs-libs libXi libXinerama libXft libXrender libXpm \
                    libgfortran \
-                   libcom_err && \
+                   libcom_err libaio && \
     yum clean all
 
 # Various directories needed for bind mounts (as overlayfs is not available on RHEL6)
