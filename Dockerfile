@@ -15,6 +15,7 @@ LABEL maintainer="Brian Bockelman"
 # - sssd-client for LDAP lookups through the host
 # - SAM tests expect cvmfs utilities
 # - gcc is required by GLOW jobs (builds matplotlib)
+# - 7 Feb 2018: libaio was added to enable the Oracle client, needed for T0 jobs.
 #
 # CMSSW dependencies
 # ------------------
@@ -32,7 +33,8 @@ RUN yum -y install cvmfs \
                    ncurses-libs perl-libs perl-ExtUtils-Embed fontconfig \
                    compat-libstdc++-33 libidn libX11 libXmu libSM libICE \
                    libXcursor libXext libXrandr libXft mesa-libGLU mesa-libGL \
-                   e2fsprogs-libs libgfortran libXi libXinerama libXft libXrender libXpm \
+                   e2fsprogs-libs libXi libXinerama libXft libXrender libXpm \
+                   libgfortran \
                    libcom_err libaio && \
     yum clean all
 
