@@ -32,8 +32,7 @@ RUN yum -y install cvmfs \
                    ncurses-libs perl-libs perl-ExtUtils-Embed fontconfig \
                    compat-libstdc++-33 libidn libX11 libXmu libSM libICE \
                    libXcursor libXext libXrandr libXft mesa-libGLU mesa-libGL \
-                   e2fsprogs-libs libXi libXinerama libXft libXrender libXpm \
-                   libgfortran \
+                   e2fsprogs-libs libXi libXinerama libXft libXrender libXpm libgfortran \
                    libcom_err libaio && \
     yum clean all
 
